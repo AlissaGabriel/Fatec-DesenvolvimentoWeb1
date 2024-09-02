@@ -1,0 +1,104 @@
+
+body{
+    background-color: black;
+}
+
+.bem{
+    width: 100px;
+    height: 100px;
+    margin: 5% auto;
+    font-size: 50px;
+    color: blue;
+    animation-name: rodar;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    animation-iteration-count: infinite;
+}
+.teste{
+    width: 100px;
+    height: 100px;
+    margin: 5% auto;
+    font-size: 50px;
+    color: yellow;
+    animation-name: rodar2;
+    animation-duration: 5s;
+    animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
+    animation-iteration-count: infinite;
+}
+.ani{
+    width: 100px;
+    height: 100px;
+    margin: 5% auto;
+    font-size: 50px;
+    color: red;
+    animation-name: rodar3;
+    animation-duration: 5s;
+    animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-iteration-count: infinite;
+}
+.pag{
+    width: 100px;
+    height: 100px;
+    margin: 5% auto;
+    font-size: 50px;
+    color: green;
+    animation-name: rodar4;
+    animation-duration: 5s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rodar {
+    from{
+        transform: rotate(0deg) scale(1);
+    }
+    to{
+        transform: rotate(360deg) scale(1.5);
+    }
+}
+
+
+@keyframes rodar2 {
+    0%{
+        transform: rotate(0deg);
+        margin-left: 0%;
+    }
+    50%{
+        transform: rotate(360deg);
+        margin-left: 50%;
+    }
+    100%{
+        transform: rotate(0deg);
+        margin-left: 0%;
+    }
+}
+
+@keyframes rodar3 {
+    0%{
+        transform: rotate(0deg);
+        margin-right: 0%;
+    }
+    50%{
+        transform: rotate(180deg);
+        margin-right: 50%;
+    }
+    100%{
+        transform: rotate(360deg);
+        margin-right: 0%;
+    }
+}
+
+@keyframes rodar4 {
+    0%{
+        transform: rotate(10deg);
+        margin-left: 0%;
+    }
+    50%{
+        transform: skewY(20deg);
+        margin-left: 50%;
+    }
+    100%{
+        transform: rotate(30deg);
+        margin-left: 0%;
+    }
+}
